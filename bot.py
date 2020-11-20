@@ -38,7 +38,7 @@ async def on_message(message):
         'Cool.'
     ]
 
-    if message.content == '!posture':
+    if message.content[:8] == '!posture' or message.content[:9]=='! Posture' or '!Posture':
         response = random.choice(feedback) #Temporarily giving random results until we integrate AI
         await message.channel.send(response)
 
