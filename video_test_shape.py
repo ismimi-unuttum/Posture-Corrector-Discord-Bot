@@ -131,7 +131,7 @@ def main(fileinp):
 
                 for (x, y) in shape:
                     cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
-
+'''
                 for start, end in line_pairs:
                     cv2.line(frame, reprojectdst[start], reprojectdst[end], (0, 0, 255))
                 
@@ -154,7 +154,7 @@ def main(fileinp):
             #cv2.destroyAllWindows()
         if(f==1):
             return None
-        
+        '''
         
 if __name__ == '__main__':
     parser=argparse.ArgumentParser()

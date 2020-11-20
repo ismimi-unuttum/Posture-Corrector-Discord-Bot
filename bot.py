@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from discord.ext import commands
 
 load_dotenv('.env')
-TOKEN = ""
+TOKEN = "Nzc4MjQ4MzU3MzA2MTcxNDMz.X7POQw.Ve3tKIY2IprBIi9cAAAqXYWCgmU"
 
 bot = commands.Bot(command_prefix='!')
 
@@ -38,7 +38,7 @@ async def on_message(message):
         'Cool.'
     ]
 
-    if message.content[:8] == '!posture' or message.content[:9]=='! Posture' or '!Posture':
+    if message.content[:8] == '!posture' or message.content[:9]=='! Posture' or message.content[:8]=='!Posture':
         response = random.choice(feedback) #Temporarily giving random results until we integrate AI
         await message.channel.send(response)
 
