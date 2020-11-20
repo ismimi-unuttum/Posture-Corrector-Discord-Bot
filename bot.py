@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from discord.ext import commands
 
 load_dotenv('.env')
-TOKEN = "Nzc4MjQ4MzU3MzA2MTcxNDMz.X7POQw.Ve3tKIY2IprBIi9cAAAqXYWCgmU"
+TOKEN = "sorry but we should handle that differently"
 
 bot = commands.Bot(command_prefix='!')
 
